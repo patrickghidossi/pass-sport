@@ -2,17 +2,6 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
 .App-header {
   background-color: #5e1c82;
   min-height: 100vh;
@@ -35,4 +24,13 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+/** Global Styles **/
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Kanit', sans-serif;
+}
+
+p, a, ul, li {
+  font-family: 'Merriweather Sans', sans-serif;
 }
