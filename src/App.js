@@ -33,6 +33,8 @@ import {
   Link
 } from "react-router-dom";
 
+import Home from "./home/Home";
+
 // This site has 3 pages, all of which are rendered
 // dynamically in the browser (not server rendered).
 //
@@ -48,7 +50,9 @@ export default function PassSportApp() {
         <div>
           <ul>
             <li>
-              <Link to="/">Home</Link>
+              <Link to="/" className="App-link">
+                Home
+              </Link>
             </li>
             <li>
               <Link to="/about">About</Link>
@@ -60,13 +64,6 @@ export default function PassSportApp() {
 
           <hr />
 
-          {/*
-          A <Switch> looks through all its children <Route>
-          elements and renders the first one whose path
-          matches the current URL. Use a <Switch> any time
-          you have multiple routes, but you want only one
-          of them to render at a time
-        */}
           <Switch>
             <Route exact path="/">
               <Home />
@@ -80,17 +77,6 @@ export default function PassSportApp() {
           </Switch>
         </div>
       </Router>
-  );
-}
-
-// You can think of these components as "pages"
-// in your app.
-
-function Home() {
-  return (
-      <div>
-        <h2>Home</h2>
-      </div>
   );
 }
 
