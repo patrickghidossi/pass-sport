@@ -164,5 +164,3 @@ If you encounter any issues or have questions:
 3. Include browser version, error messages, and steps to reproduce
 
 ---
-
-**Happy Sporting! 🏆**
